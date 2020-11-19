@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <header class="nav bg-dark">
+        <span id="logo">Logo</span>
+        <div id="extra">
+            <a href="">Extra link</a>
+        </div>
+        <div id="nav-menu">
+            <ul>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                
+            </ul>
+        </div>
+        <div id="hamburger"></div>
+    </header>
+    <main class="row">
+       <h1 class="title-centered">Hello</h1>
+       
+    </main>
+
+    <script defer>
+        const hamburger = document.getElementById('hamburger');
+        hamburger.addEventListener('click', () => {
+            document.getElementById('nav-menu').classList.toggle('mobile-visible');
+            hamburger.classList.toggle('close');
+        });
+    </script>
+</body>
+</html>

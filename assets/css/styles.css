@@ -1,0 +1,44 @@
+/* 
+    Definitions of root elements and classes used trouought the project.
+    
+    © 2020 Shannarra (Petar Angelov) All Rights Reserved.
+    https://github.com/Shannarra
+    https://petarangelov.com
+*/
+
+@charset "utf-8";
+
+:root {
+    --color-green: green;
+    --color-red: red;
+    --color-blue: blue;
+    --color-yellow: yellow;
+    --color-bg-nav: #343a40;
+    --color-text-nav: white;
+    --color-text-nav-hover: #b9b1b1;
+    --bord-debug: 1px solid red;/* border for debugging */
+}
+
+.title { font-size: 2em; }
+
+.title-centered {
+    font-size: 3em;
+    text-align: center;
+    padding: 15px 5px;
+}
+
+.bg-green { background-color: var(--green); }
+.bg-red { background-color: var(--red); }
+.bg-blue { background-color: var(--blue); }
+.bg-yellow { background-color: var(--yellow); }
+.bg-dark { 
+    background-color: var(--color-bg-nav);
+    color: var(--color-text-nav);
+}
+
+.text-white { color: #fff; }
+.text-base { color: #000; }
+.text-success { color: var(--green); }
+.text-blue { color: var(--blue); }
+.text-warn { color: var(--yellow); }
+.text-err {color: var(--red);}

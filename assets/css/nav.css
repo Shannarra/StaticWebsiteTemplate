@@ -1,0 +1,103 @@
+/* 
+   Styles defined for a navigation bar.
+    
+    © 2020 Shannarra (Petar Angelov) All Rights Reserved.
+    https://github.com/Shannarra
+    https://petarangelov.com
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header.nav{
+    display: grid;
+    grid-template-columns: 100px 1fr 30% 5%;
+    padding: 20px;
+
+    /* always stay on top! */
+    position: sticky;
+    top:0; /* don't cover the bottom element! */
+}
+
+a { text-decoration: none; }
+
+#logo {
+    margin-top: -7px;
+    text-align: center;
+    display: block;
+    font-size: 2em;
+}
+
+#extra > a { color: var(--color-text-nav); font-size: 1.5em; }
+#extra > a:hover { color: var(--color-text-nav-hover); }
+
+#nav-menu { 
+    display: block; 
+    height: 4vh;
+}
+
+#nav-menu > ul { list-style-type: none; }
+#nav-menu > ul > li { 
+    float: left;
+    padding-right: 20px;
+}
+
+#nav-menu > ul > li > a { color: var(--color-text-nav); font-size: 1.5em; }
+#nav-menu > ul > li > a:hover { color: var(--color-text-nav-hover); }
+
+#nav-menu.mobile-visible {
+    transition: height .25s linear;
+    display: grid;
+    grid-row-start: 2;
+    grid-template-rows: 100px;
+    opacity: 1;
+    height: 10vh;
+    padding-left: 15px;
+}
+
+#nav-menu:not(.mobile-visible) {transition: display .5s linear;}
+
+
+/* Dropdown hamburger */
+
+#hamburger {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-image: url("../img/nav/hamburger.svg");
+    background-size: cover;
+    display: none;    
+}
+
+#hamburger.close {
+    background-image: url('../img/nav/close.svg');
+    background-size: cover;
+    transition: height 1s linear;
+}
+
+/* additionals */
+
+.row { width: 100%; }
+
+.row::after {
+    clear: both;
+    /* GET UNDER YOU STUPID $hIE7 */
+    content: "";
+    display: table;
+}
+
+/* media queries */
+
+@media screen and (max-width: 768px) {/* tablets and smaller*/
+    header.nav > #nav-menu:not(.mobile-visible) { opacity: 0;  }
+
+   #hamburger {
+       display: block;
+       position: fixed;
+       right: 0;
+       margin-right: 20px;
+       transition: height .25s linear;
+   }
+}
