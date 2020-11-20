@@ -6,6 +6,9 @@
     https://petarangelov.com
 */
 
+@charset "utf-8";
+@import "./styles.css";
+
 * {
     margin: 0;
     padding: 0;
@@ -46,6 +49,7 @@ a { text-decoration: none; }
 
 #nav-menu > ul > li > a { color: var(--color-text-nav); font-size: 1.5em; }
 #nav-menu > ul > li > a:hover { color: var(--color-text-nav-hover); }
+#nav-menu > ul > li > a.item-active { color: var(--color-text-nav-hover);}
 
 #nav-menu.mobile-visible {
     transition: height .25s linear;
@@ -53,15 +57,13 @@ a { text-decoration: none; }
     grid-row-start: 2;
     grid-template-rows: 100px;
     opacity: 1;
-    height: 10vh;
+    height: 12vh;
     padding-left: 15px;
 }
 
 #nav-menu:not(.mobile-visible) {transition: display .5s linear;}
 
-
 /* Dropdown hamburger */
-
 #hamburger {
     width: 30px;
     height: 30px;
@@ -75,17 +77,6 @@ a { text-decoration: none; }
     background-image: url('../img/nav/close.svg');
     background-size: cover;
     transition: height 1s linear;
-}
-
-/* additionals */
-
-.row { width: 100%; }
-
-.row::after {
-    clear: both;
-    /* GET UNDER YOU STUPID $hIE7 */
-    content: "";
-    display: table;
 }
 
 /* media queries */

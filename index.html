@@ -5,7 +5,7 @@
     <title>Title</title>
 
     <link rel="stylesheet" href="./assets/css/nav.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
 </head>
 <body>
     <header class="nav bg-dark">
@@ -15,7 +15,7 @@
         </div>
         <div id="nav-menu">
             <ul>
-                <li><a href="#">Link</a></li>
+                <li><a href="#" class="item-active">Link</a></li>
                 <li><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
                 
@@ -23,10 +23,41 @@
         </div>
         <div id="hamburger"></div>
     </header>
-    <main class="row">
-       <h1 class="title-centered">Hello</h1>
+    <main class="container">
+       <h2 class="title-centered">Hello</h2>
        
+       <section class="row">
+            <article class="col-med-6 bg-green">
+                aaa
+            </article>
+            <article class="col-med-6 bg-blue"> 
+                aaa
+            </article>
+       </section>
     </main>
+    <footer class="bg-dark container">
+        <main class="row text-centered">
+            <aside class="col-med-3">
+                <p>Company name</p>
+                <span class="text-small">
+                    Company slogan <br />
+                    Copyright &copy; 2020 Company name
+                </span>
+            </aside>
+            <section class="col-med-6">
+                <p>Contact us!</p>
+                <span class="text-small">
+                    Contact information here...
+                </span>
+            </section>
+            <aside class="col-med-3">
+                <p>Additional information</p>
+                <span class="text-small">
+                    Some text
+                </span>
+            </aside>
+        </main>
+    </footer>
 
     <script defer>
         const hamburger = document.getElementById('hamburger');

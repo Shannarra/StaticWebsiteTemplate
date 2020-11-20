@@ -6,8 +6,6 @@
     https://petarangelov.com
 */
 
-@charset "utf-8";
-
 :root {
     --color-green: green;
     --color-red: red;
@@ -27,10 +25,12 @@
     padding: 15px 5px;
 }
 
-.bg-green { background-color: var(--green); }
-.bg-red { background-color: var(--red); }
-.bg-blue { background-color: var(--blue); }
-.bg-yellow { background-color: var(--yellow); }
+.text-centered { text-align: center; }
+
+.bg-green { background-color: var(--color-green); }
+.bg-red { background-color: var(--color-red); }
+.bg-blue { background-color: var(--color-blue); }
+.bg-yellow { background-color: var(--color-yellow); }
 .bg-dark { 
     background-color: var(--color-bg-nav);
     color: var(--color-text-nav);
@@ -38,7 +38,33 @@
 
 .text-white { color: #fff; }
 .text-base { color: #000; }
-.text-success { color: var(--green); }
-.text-blue { color: var(--blue); }
-.text-warn { color: var(--yellow); }
-.text-err {color: var(--red);}
+.text-success { color: var(--color-green); }
+.text-blue { color: var(--color-blue); }
+.text-warn { color: var(--color-yellow); }
+.text-danger {color: var(--color-red);}
+
+/* text sizes*/
+.text-small { font-size: 0.5em; }
+.text-normal { font-size: 1em; }
+.text-big { font-size: 2em; }
+.text-large { font-size: 3em; }
+
+.center {
+    display:flex;
+    align-items:center;
+}
+
+
+footer {
+    min-height: 10vh;
+    height: 15vh;
+    position: static;
+    padding: 20px;
+    font-size: 2em;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        min-height: 40vh;
+    }
+}
