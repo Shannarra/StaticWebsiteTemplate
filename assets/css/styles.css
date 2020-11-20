@@ -26,6 +26,7 @@
 }
 
 .text-centered { text-align: center; }
+.text-left { text-align: left;}
 
 .bg-green { background-color: var(--color-green); }
 .bg-red { background-color: var(--color-red); }
@@ -46,6 +47,7 @@
 /* text sizes*/
 .text-small { font-size: 0.5em; }
 .text-normal { font-size: 1em; }
+.text-bigger { font-size: 1.5em; }
 .text-big { font-size: 2em; }
 .text-large { font-size: 3em; }
 
@@ -56,15 +58,12 @@
 
 
 footer {
-    min-height: 10vh;
-    height: 15vh;
     position: static;
-    padding: 20px;
     font-size: 2em;
 }
 
 @media screen and (max-width: 768px) {
     footer {
-        min-height: 40vh;
+        height: 100%;
     }
 }

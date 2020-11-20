@@ -57,7 +57,7 @@ a { text-decoration: none; }
     grid-row-start: 2;
     grid-template-rows: 100px;
     opacity: 1;
-    height: 12vh;
+    height: 15vh;
     padding-left: 15px;
 }
 
@@ -84,11 +84,12 @@ a { text-decoration: none; }
 @media screen and (max-width: 768px) {/* tablets and smaller*/
     header.nav > #nav-menu:not(.mobile-visible) { opacity: 0;  }
 
+
    #hamburger {
        display: block;
-       position: fixed;
+       position: absolute;
        right: 0;
-       margin-right: 20px;
+       margin: 20px;
        transition: height .25s linear;
    }
 }

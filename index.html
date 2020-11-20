@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="./assets/css/nav.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
 </head>
 <body>
     <header class="nav bg-dark">
@@ -18,25 +19,66 @@
                 <li><a href="#" class="item-active">Link</a></li>
                 <li><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
-                
             </ul>
         </div>
         <div id="hamburger"></div>
     </header>
     <main class="container">
-       <h2 class="title-centered">Hello</h2>
-       
+      
        <section class="row">
-            <article class="col-med-6 bg-green">
-                aaa
+            <h2 class="title-centered">Hello</h2>
+            <article class="col-med-6">
+                <h2 class="text-centered">Article</h2>
+                <p class="col-med-8">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, repellendus. Laborum porro accusamus debitis. Similique dolor sequi autem consequuntur architecto at reprehenderit voluptate! Magnam voluptas, ex reprehenderit iusto numquam non?
+                </p>
+                <p class="col-med-8">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, repellendus. Laborum porro accusamus debitis. Similique dolor sequi autem consequuntur architecto at reprehenderit voluptate! Magnam voluptas, ex reprehenderit iusto numquam non?
+                </p>
             </article>
-            <article class="col-med-6 bg-blue"> 
-                aaa
+            <aside class="col-med-6"> 
+                <h2 class="text-centered">Article</h2>
+                <p class="col-med-8">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, repellendus. Laborum porro accusamus debitis. Similique dolor sequi autem consequuntur architecto at reprehenderit voluptate! Magnam voluptas, ex reprehenderit iusto numquam non?
+                </p>
+                <p class="col-med-8">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, repellendus. Laborum porro accusamus debitis. Similique dolor sequi autem consequuntur architecto at reprehenderit voluptate! Magnam voluptas, ex reprehenderit iusto numquam non?
+                </p>
+            </aside>
+       </section>
+       <section class="row">
+            <h2 class="title-centered">Images</h2>
+            <p class="text-centered" id="subtitle">Some random pictures to make your day</p>
+            <article class="col-med-4">
+                <!--
+                    Had to google how do they call a female deer in English
+                    https://pixabay.com/photos/deer-animal-wild-animals-mammal-5723225/-->
+                <img src="./assets/img/hind.jpg" alt="Could not load the image :(" />
+            </article>
+            <article class="col-med-4">
+                <!--https://pixabay.com/photos/hoverfly-zinnia-yellow-blossom-5749361/-->
+                <img src="./assets/img/bee.jpg" alt="Could not load the image :(" />
+            </article>
+            <article class="col-med-4">
+                <!--https://pixabay.com/photos/mountains-trees-fog-morning-fog-5750804/-->
+                <img src="./assets/img/mountains.jpg" alt="Could not load the image :(" />
+            </article>
+            <article class="col-med-4">
+                <!--https://pixabay.com/photos/mountain-mountain-bike-cyclist-path-5724055/-->
+                <img src="./assets/img/biker.jpg" alt="Could not load the image :(" />
+            </article>
+            <article class="col-med-4">
+                <!--https://pixabay.com/photos/eagle-bird-nature-american-3955951/-->
+                <img src="./assets/img/stream.jpg" alt="Could not load the image :(" />
+            </article>
+            <article class="col-med-4">
+                <!--https://pixabay.com/photos/labrador-retriever-dog-pet-labrador-5735582/-->
+                <img src="./assets/img/labrador.jpg" alt="Could not load the image :(" />
             </article>
        </section>
     </main>
     <footer class="bg-dark container">
-        <main class="row text-centered">
+        <main class="row text-centered articles-container">
             <aside class="col-med-3">
                 <p>Company name</p>
                 <span class="text-small">
@@ -46,7 +88,7 @@
             </aside>
             <section class="col-med-6">
                 <p>Contact us!</p>
-                <span class="text-small">
+                <span class="text-small" >
                     Contact information here...
                 </span>
             </section>
